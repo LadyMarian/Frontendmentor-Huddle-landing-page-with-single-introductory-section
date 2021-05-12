@@ -1,0 +1,54 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: $Violet;  
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: $OpenSans;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    width: 375px;
+    padding: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 3rem;
+}
+
+//header
+.header {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 3.5rem;
+    
+    &__logo {
+        width: 40%;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: .2em;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

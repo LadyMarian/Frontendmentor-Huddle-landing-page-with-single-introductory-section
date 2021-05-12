@@ -1,0 +1,70 @@
+.main {
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+        color: white;
+        text-align: center;
+        
+        &__title {
+            font-family: $Poppins;
+            font-size: 24px;
+            line-height: 1.5;
+        }
+
+        &__text {
+            line-height: 1.6;
+            font-size: 15.5px;
+            margin-bottom: 2.5rem;
+        }
+
+        &__btn {
+            text-decoration: none;
+            color: $Violet;
+            background-color: white;
+            font-size: 14px;
+            padding: 1em 5em;
+            border-radius: 50px;
+            box-shadow: 2px 3px 4px rgba(0,0,0,.5);
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background-color: $SoftMagenta;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__social {
+        margin-top: 5rem;
+        &__icons {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+    
+}
+
+.fab {
+    padding: .4em;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: all .3s ease-in-out;
+
+    &+.fab {
+        margin-left: .5em;
+    }
+
+    &:hover {
+        color: $SoftMagenta;
+        cursor: pointer;
+        border: 1px solid $SoftMagenta;
+    }
+}
+
+.fa-facebook-f {
+    padding: .4em .55em;
+}
